@@ -1,5 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  background: #014e58;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #dce6e7;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+div.logo {
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #dce6e7;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  color: #dce6e7;
+  display: block;
+  padding: 1.3rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s all ease 0s;
+}
+
+li.button a {
+  padding: 6px 35px;
+  margin-top: 15px;
+  border: 2px solid #dce6e7;
+  color: #dce6e7;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+li.button a:hover {
+  border: 2px solid #6daaaf;
+  color: #6daaaf;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #dce6e7;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  li.button a {
+    padding: 8px 45px;
+  }
+}
+
+/* Hero Area Style */
+
+div#hero-area {
+  background: #014e58;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-right: 80px;
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+div.hero-info h2 {
+  font-size: 2.7rem;
+  color: #dce6e7;
+  font-weight: bolder;
+}
+
+div.hero-paragraph p {
+  font-size: 1.1rem;
+  color: #dce6e7;
+  margin-top: 10px;
+}
+
+span.par {
+  color: #f67e7f;
+}
+
+@media (max-width: 700px) {
+  div#hero-area {
+    background: #014e58;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 8%;
+    padding-bottom: 4%;
+  }
+
+  div.hero-info h2 {
+    font-size: 2.4rem;
+  }
+
+  div.hero-paragraph p {
+    font-size: 0.7rem;
+    margin-top: 15px;
+  }
 }
