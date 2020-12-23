@@ -426,12 +426,6 @@ div.footer1 {
   justify-content: space-evenly;
 }
 
-div.footer-header h1 {
-  font-size: 3rem;
-  font-weight: bolder;
-  color: #dce6e7;
-}
-
 div.footer-about h3 {
   color: #dce6e7;
   font-size: 2rem;
@@ -467,10 +461,6 @@ div.footer-address p {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-  }
-
-  div.footer-header h1 {
-    font-size: 2.5rem;
   }
 
   div.footer-about h3 {
