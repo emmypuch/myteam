@@ -134,7 +134,7 @@ div#hero-area {
 }
 
 div.hero-info h2 {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   color: #dce6e7;
   font-weight: bolder;
 }
@@ -157,15 +157,96 @@ span.par {
     padding-left: 35px;
     padding-right: 30px;
     padding-top: 8%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
   }
 
   div.hero-info h2 {
     font-size: 2.4rem;
+    color: #dce6e7;
   }
 
   div.hero-paragraph p {
     font-size: 0.7rem;
+    margin-top: 15px;
+  }
+}
+
+/* Distribution Area Style */
+
+div#distribution-area {
+  display: flex;
+  justify-content: space-between;
+  background: #032e34;
+  padding-left: 85px;
+  padding-right: 80px;
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+div.distribution-heading h3 {
+  color: #dce6e7;
+  font-size: 2.3rem;
+}
+
+div.list {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+div.list h4 {
+  color: #f67e7f;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+div.list p {
+  color: #dce6e7;
+  font-size: 0.9rem;
+}
+
+div.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6daaaf;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  div#distribution-area {
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+  }
+
+  div.distribution-heading h3 {
+    font-size: 2rem;
+  }
+
+  div.list {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  div.list h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  div.list p {
+    font-size: 0.6rem;
+  }
+
+  div.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
     margin-top: 15px;
   }
 }
